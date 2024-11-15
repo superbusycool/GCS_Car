@@ -2,76 +2,40 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/motor/DJI_motor/dji_motor.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/referee/bsp_referee_UI/UI_print.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/referee/bsp_referee_UI/fifo.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/rc/keyboard/keyboard.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/rc/dbus/rc_dbus.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/dwt/drv_dwt.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/usr_callback.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/referee/Referee.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/msg/drv_msg.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/referee/bsp_referee_UI/BSP_CRC.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/referee/bsp_referee_UI/Referee_system.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_Libraries.dir/./libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj"
+			"path" : "CMakeFiles/rtt_RM_Modules.dir/./src/modules/mag/ist8310/ist8310.c.obj"
 		}
 	],
 	"backtrace" : 1,
@@ -95,7 +59,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 285,
+				"line" : 287,
 				"parent" : 0
 			},
 			{
@@ -389,24 +353,12 @@
 				8,
 				9,
 				10,
-				11,
-				12,
-				13,
-				14,
-				15,
-				16,
-				17,
-				18,
-				19,
-				20,
-				21,
-				22,
-				23
+				11
 			]
 		}
 	],
-	"id" : "rtt_Libraries::@6890427a1f51a3e7e1df",
-	"name" : "rtt_Libraries",
+	"id" : "rtt_RM_Modules::@6890427a1f51a3e7e1df",
+	"name" : "rtt_RM_Modules",
 	"paths" : 
 	{
 		"build" : ".",
@@ -429,19 +381,7 @@
 				8,
 				9,
 				10,
-				11,
-				12,
-				13,
-				14,
-				15,
-				16,
-				17,
-				18,
-				19,
-				20,
-				21,
-				22,
-				23
+				11
 			]
 		}
 	],
@@ -450,145 +390,73 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c",
+			"path" : "src/modules/motor/DJI_motor/dji_motor.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c",
+			"path" : "src/modules/referee/bsp_referee_UI/UI_print.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+			"path" : "src/modules/referee/bsp_referee_UI/fifo.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+			"path" : "src/modules/rc/keyboard/keyboard.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+			"path" : "src/modules/rc/dbus/rc_dbus.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+			"path" : "src/modules/dwt/drv_dwt.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
+			"path" : "src/modules/usr_callback.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+			"path" : "src/modules/referee/Referee.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c",
+			"path" : "src/modules/msg/drv_msg.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c",
+			"path" : "src/modules/referee/bsp_referee_UI/BSP_CRC.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+			"path" : "src/modules/referee/bsp_referee_UI/Referee_system.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c",
+			"path" : "src/modules/mag/ist8310/ist8310.c",
 			"sourceGroupIndex" : 0
 		}
 	],

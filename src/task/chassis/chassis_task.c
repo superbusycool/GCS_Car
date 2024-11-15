@@ -29,9 +29,10 @@ static void chassis_pub_push(void);
 static void chassis_sub_pull(void);
 
 /* --------------------------------- 电机控制相关 --------------------------------- */
-// static pid_obj_t *follow_pid; // 用于底盘跟随云台计算vw
-// static pid_config_t chassis_follow_config = INIT_PID_CONFIG(CHASSIS_KP_V_FOLLOW, CHASSIS_KI_V_FOLLOW, CHASSIS_KD_V_FOLLOW, CHASSIS_INTEGRAL_V_FOLLOW, CHASSIS_MAX_V_FOLLOW,
-                                                            // (PID_Trapezoid_Intergral | PID_Integral_Limit | PID_Derivative_On_Measurement));
+static pid_obj_t *follow_pid; // 用于底盘跟随云台计算vw
+static pid_config_t chassis_follow_config = INIT_PID_CONFIG(CHASSIS_KP_V_FOLLOW, CHASSIS_KI_V_FOLLOW, CHASSIS_KD_V_FOLLOW, CHASSIS_INTEGRAL_V_FOLLOW, CHASSIS_MAX_V_FOLLOW,
+                                                            (PID_Trapezoid_Intergral | PID_Integral_Limit | PID_Derivative_On_Measurement));
+
 static struct chassis_controller_t
 {
     pid_obj_t *speed_pid;
@@ -39,6 +40,8 @@ static struct chassis_controller_t
 
 static dji_motor_object_t *chassis_motor[4];  // 底盘电机实例
 static int16_t motor_ref[4]; // 电机控制期望值
+
+static int16_t chassis_max_output= 10000 ;  //电机限功率，也许会用到大功率电机
 
 static void chassis_motor_init();
 /*定时器初始化*/
@@ -86,21 +89,9 @@ void chassis_thread_entry(void *argument)
     {
         cmd_start = dwt_get_time_ms();
         /* 计算实际速度 */
-        omni_get_speed(chassis_motor);
+        // omni_get_speed(chassis_motor);
         /* 更新该线程所有的订阅者 */
         chassis_sub_pull();
-
-
-//        if(chassis_cmd.ctrl_mode == CHASSIS_AUTO)
-//        {
-//            rt_pin_write(GPIO_LED, PIN_HIGH);
-//            rt_thread_mdelay(500);
-//            rt_pin_write(GPIO_LED, PIN_LOW);
-//            rt_thread_mdelay(500);
-//        }
-//        else
-//            rt_pin_write(GPIO_LED, PIN_LOW);
-
 
 
         for (uint8_t i = 0; i < 4; i++)
@@ -108,6 +99,7 @@ void chassis_thread_entry(void *argument)
             dji_motor_enable(chassis_motor[i]);
         }
 
+        chassis_cmd.ctrl_mode = CHASSIS_OPEN_LOOP;
         switch (chassis_cmd.ctrl_mode)
         {
             case CHASSIS_RELAX:
@@ -116,14 +108,9 @@ void chassis_thread_entry(void *argument)
                     dji_motor_relax(chassis_motor[i]);
                 }
                 break;
-            case CHASSIS_FOLLOW_GIMBAL:
+            case CHASSIS_FOLLOW_ROAD:
                 chassis_cmd.vw = pid_calculate(follow_pid, chassis_cmd.offset_angle, 0);
                 /* 底盘运动学解算 */
-                absolute_cal(&chassis_cmd, chassis_cmd.offset_angle);
-                chassis_calc_moto_speed(&chassis_cmd, motor_ref);
-                break;
-            case CHASSIS_SPIN:
-                absolute_cal(&chassis_cmd, chassis_cmd.offset_angle);
                 chassis_calc_moto_speed(&chassis_cmd, motor_ref);
                 break;
             case CHASSIS_OPEN_LOOP:
@@ -131,8 +118,6 @@ void chassis_thread_entry(void *argument)
                 break;
             case CHASSIS_STOP:
                 rt_memset(motor_ref, 0, sizeof(motor_ref));
-                break;
-            case CHASSIS_FLY:
                 break;
             case CHASSIS_AUTO:
                 break;
@@ -170,8 +155,8 @@ static void chassis_pub_init(void)
 static void chassis_sub_init(void)
 {
     sub_cmd = sub_register("chassis_cmd", sizeof(struct chassis_cmd_msg));
-    sub_referee= sub_register("referee_fdb", sizeof(struct referee_fdb_msg));
-    sub_ins = sub_register("ins_msg", sizeof(struct ins_msg));
+    // sub_referee= sub_register("referee_fdb", sizeof(struct referee_fdb_msg));
+    // sub_ins = sub_register("ins_msg", sizeof(struct ins_msg));
 }
 
 /**
@@ -187,8 +172,8 @@ static void chassis_pub_push(void)
 static void chassis_sub_pull(void)
 {
     sub_get_msg(sub_cmd, &chassis_cmd);
-    sub_get_msg(sub_referee, &referee_fdb);
-    sub_get_msg(sub_ins, &ins_data);
+    // sub_get_msg(sub_referee, &referee_fdb);
+    // sub_get_msg(sub_ins, &ins_data);
 }
 
 /* --------------------------------- 电机控制相关 --------------------------------- */
@@ -197,116 +182,32 @@ static void chassis_sub_pull(void)
 static rt_int16_t motor_control_0(dji_motor_measure_t measure)
 {
     static rt_int16_t set = 0;
-    static int16_t chassis_max_current=0;
-    static int16_t chassis_power_limit=0;
-    /*传参给局部变量防止被更改抽风*/
-    chassis_power_limit=(int16_t)referee_fdb.robot_status.chassis_power_limit;
-    /*底盘功率限制防止buffer溢出*/
-    if(chassis_power_limit>=120)
-    {
-        chassis_power_limit=120;
-    }
-    if(referee_fdb.power_heat_data.buffer_energy<20)
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE*(referee_fdb.power_heat_data.buffer_energy/50);
-    }
-    else
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE;
-    }
-    if (chassis_power_limit==0)
-    {
-        chassis_max_current=8000;
-    }
     set =(rt_int16_t) pid_calculate(chassis_controller[0].speed_pid, measure.speed_rpm, motor_ref[0]);
-    VAL_LIMIT(set , -chassis_max_current, chassis_max_current);
+    VAL_LIMIT(set , -chassis_max_output, chassis_max_output);
     return set;
 }
 
 static rt_int16_t motor_control_1(dji_motor_measure_t measure)
 {
     static rt_int16_t set = 0;
-    static int16_t chassis_max_current=0;
-    static int16_t chassis_power_limit=0;
-    /*传参给局部变量防止被更改抽风*/
-    chassis_power_limit=(int16_t)referee_fdb.robot_status.chassis_power_limit;
-    /*底盘功率限制防止buffer溢出*/
-    if(chassis_power_limit>=120)
-    {
-        chassis_power_limit=120;
-    }
-    if(referee_fdb.power_heat_data.buffer_energy<20)
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE*(referee_fdb.power_heat_data.buffer_energy/50);
-    }
-    else
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE;
-    }
-    if (chassis_power_limit==0)
-    {
-        chassis_max_current=8000;
-    }
     set =(rt_int16_t) pid_calculate(chassis_controller[1].speed_pid, measure.speed_rpm, motor_ref[1]);
-    VAL_LIMIT(set , -chassis_max_current, chassis_max_current);
+    VAL_LIMIT(set , -chassis_max_output, chassis_max_output);
     return set;
 }
 
 static rt_int16_t motor_control_2(dji_motor_measure_t measure)
 {
     static rt_int16_t set = 0;
-    static int16_t chassis_max_current=0;
-    static int16_t chassis_power_limit=0;
-    /*传参给局部变量防止被更改抽风*/
-    chassis_power_limit=(int16_t)referee_fdb.robot_status.chassis_power_limit;
-    /*底盘功率限制防止buffer溢出*/
-    if(chassis_power_limit>=120)
-    {
-        chassis_power_limit=120;
-    }
-    if(referee_fdb.power_heat_data.buffer_energy<20)
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE*(referee_fdb.power_heat_data.buffer_energy/50);
-    }
-    else
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE;
-    }
-    if (chassis_power_limit==0)
-    {
-        chassis_max_current=8000;
-    }
     set =(rt_int16_t) pid_calculate(chassis_controller[2].speed_pid, measure.speed_rpm, motor_ref[2]);
-    VAL_LIMIT(set , -chassis_max_current, chassis_max_current);
+    VAL_LIMIT(set , -chassis_max_output, chassis_max_output);
     return set;
 }
 
 static rt_int16_t motor_control_3(dji_motor_measure_t measure)
 {
     static rt_int16_t set = 0;
-    static int16_t chassis_max_current=0;
-    static int16_t chassis_power_limit=0;
-    /*传参给局部变量防止被更改抽风*/
-    chassis_power_limit=(int16_t)referee_fdb.robot_status.chassis_power_limit;
-    /*底盘功率限制防止buffer溢出*/
-    if(chassis_power_limit>=120)
-    {
-        chassis_power_limit=120;
-    }
-    if(referee_fdb.power_heat_data.buffer_energy<20)
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE*(referee_fdb.power_heat_data.buffer_energy/50);
-    }
-    else
-    {
-        chassis_max_current=chassis_power_limit*CURRENT_POWER_LIMIT_RATE;
-    }
-    if (chassis_power_limit==0)
-    {
-        chassis_max_current=8000;
-    }
     set =(rt_int16_t) pid_calculate(chassis_controller[3].speed_pid, measure.speed_rpm, motor_ref[3]);
-    VAL_LIMIT(set , -chassis_max_current, chassis_max_current);
+    VAL_LIMIT(set , -chassis_max_output, chassis_max_output);
     return set;
 }
 
@@ -323,28 +224,28 @@ static void *motor_control[4] =
 motor_config_t chassis_motor_config[4] =
         {
                 {
-                        .motor_type = M3508,
-                        // .can_name = CAN_CHASSIS,
-                        // .rx_id = 0x201,
-                        .controller = &chassis_controller[0],
+                    .pulse_name = "pulse2",
+                    .motor_type = GM310,
+                    .id = 0,
+                    .controller = &chassis_controller[0],
                 },
                 {
-                        .motor_type = M3508,
-                        // .can_name = CAN_CHASSIS,
-                        // .rx_id = 0x202,
-                        .controller = &chassis_controller[1],
+                    .pulse_name = "pulse3",
+                    .motor_type = GM310,
+                    .id = 1,
+                    .controller = &chassis_controller[1],
                 },
                 {
-                        .motor_type = M3508,
-                        // .can_name = CAN_CHASSIS,
-                        // .rx_id = 0x203,
-                        .controller = &chassis_controller[2],
+                    .pulse_name = "pulse4",
+                    .motor_type = GM310,
+                    .id = 2,
+                    .controller = &chassis_controller[2],
                 },
                 {
-                        .motor_type = M3508,
-                        // .can_name = CAN_CHASSIS,
-                        // .rx_id = 0x204,
-                        .controller = &chassis_controller[3],
+                    .pulse_name = "pulse5",
+                    .motor_type = GM310,
+                    .id= 3,
+                    .controller = &chassis_controller[3],
                 }
         };
 
@@ -362,7 +263,7 @@ static void chassis_motor_init()
         chassis_motor[i] = dji_motor_register(&chassis_motor_config[i], motor_control[i]);
     }
 
-    // follow_pid = pid_register(&chassis_follow_config);
+    follow_pid = pid_register(&chassis_follow_config);
 }
 
 /* --------------------------------- 底盘解算控制 --------------------------------- */
@@ -378,17 +279,21 @@ static void omni_calc(struct chassis_cmd_msg *cmd, int16_t* out_speed)
     int16_t wheel_rpm[4];
     float wheel_rpm_ratio;
 
-    wheel_rpm_ratio = 60.0f / (WHEEL_PERIMETER * CHASSIS_DECELE_RATIO);
+    wheel_rpm_ratio = 60.0f / WHEEL_PERIMETER;
 
     //限制底盘各方向速度
     VAL_LIMIT(cmd->vx, -MAX_CHASSIS_VX_SPEED, MAX_CHASSIS_VX_SPEED);  //mm/s
     VAL_LIMIT(cmd->vy, -MAX_CHASSIS_VY_SPEED, MAX_CHASSIS_VY_SPEED);  //mm/s
     VAL_LIMIT(cmd->vw, -MAX_CHASSIS_VR_SPEED, MAX_CHASSIS_VR_SPEED);  //rad/s
 
-    wheel_rpm[0] = ( 0.7071*cmd->vx + 0.7071*cmd->vy + cmd->vw * LENGTH_RADIUS) * wheel_rpm_ratio;//left//x，y方向速度,w底盘转动速度
-    wheel_rpm[1] = ( 0.7071*cmd->vx - 0.7071*cmd->vy + cmd->vw * LENGTH_RADIUS) * wheel_rpm_ratio;//forward
-    wheel_rpm[2] = (0.7071*-cmd->vx - 0.7071*cmd->vy + cmd->vw * LENGTH_RADIUS) * wheel_rpm_ratio;//right
-    wheel_rpm[3] = (0.7071*-cmd->vx + 0.7071*cmd->vy + cmd->vw * LENGTH_RADIUS) * wheel_rpm_ratio;//back
+    wheel_rpm[0] = (cmd->vy - cmd->vw*0.1) * wheel_rpm_ratio;//速度（mm/s)*60s/周长(mm) = 转/分
+    wheel_rpm[1] = (cmd->vy - cmd->vw*0.1) * wheel_rpm_ratio;// Vy-Vw也许可以实现转向
+    wheel_rpm[2] = (cmd->vy + cmd->vw*0.1) * wheel_rpm_ratio;//
+    wheel_rpm[3] = (cmd->vy + cmd->vw*0.1) * wheel_rpm_ratio;//
+    wheel_rpm[0] =60;
+    wheel_rpm[1] =10;
+    wheel_rpm[2] =10;
+    wheel_rpm[3] =10;
 
     memcpy(out_speed, wheel_rpm, 4*sizeof(int16_t));//copy the rpm to out_speed
 }
@@ -397,70 +302,70 @@ static void omni_calc(struct chassis_cmd_msg *cmd, int16_t* out_speed)
  * @brief 全向轮底盘运动逆解算求解实际速度(x,y,w是相对于底盘的x，y，w的速度)
  *
  * @param TODO:具体数值正负待定，由测试得正确结果
- * @param
+ * @param TODO:为工创小车添加里程计
  */
 
-static rt_err_t timeout_cb(rt_device_t dev, rt_size_t size)
-{
-    x_ch = vx_ch *0.001f +x_ch;
-    y_ch = vy_ch *0.001f +y_ch;
-    w_ch = vw_ch * 0.001f * RADIAN_COEF +w_ch;
-    x_gim = vx_gim *0.001f +x_gim;
-    y_gim = vy_gim *0.001f +y_gim;
-    x_cos_w = vx_gim * cosf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + x_cos_w;
-    x_sin_w = vy_gim * sinf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + x_sin_w;
-    y_cos_w = vy_gim * cosf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + y_cos_w;
-    y_sin_w = vx_gim * sinf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + y_sin_w;
-    chassis_fdb.x_pos_gim=x_cos_w + x_sin_w;
-    chassis_fdb.y_pos_gim=y_cos_w - y_sin_w;
+// static rt_err_t timeout_cb(rt_device_t dev, rt_size_t size)
+// {
+//     x_ch = vx_ch *0.001f +x_ch;
+//     y_ch = vy_ch *0.001f +y_ch;
+//     w_ch = vw_ch * 0.001f * RADIAN_COEF +w_ch;
+//     x_gim = vx_gim *0.001f +x_gim;
+//     y_gim = vy_gim *0.001f +y_gim;
+//     x_cos_w = vx_gim * cosf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + x_cos_w;
+//     x_sin_w = vy_gim * sinf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + x_sin_w;
+//     y_cos_w = vy_gim * cosf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + y_cos_w;
+//     y_sin_w = vx_gim * sinf(ins_data.yaw_total_angle/RADIAN_COEF)*0.001f + y_sin_w;
+//     chassis_fdb.x_pos_gim=x_cos_w + x_sin_w;
+//     chassis_fdb.y_pos_gim=y_cos_w - y_sin_w;
+//
+//     return 0;
+// }
 
-    return 0;
-}
-
-int TIM_Init(void)
-{
-    rt_err_t ret = RT_EOK;
-    rt_hwtimerval_t timeout_s;      /* 定时器超时值 */
-    rt_device_t hw_dev = RT_NULL;   /* 定时器设备句柄 */
-    rt_hwtimer_mode_t mode;         /* 定时器模式 */
-    rt_uint32_t freq = 10000;               /* 计数频率 */
-
-    /* 查找定时器设备 */
-    hw_dev = rt_device_find("timer4" );
-    if (hw_dev == RT_NULL)
-    {
-        rt_kprintf("hwtimer sample run failed! can't find %s device!\n", HWTIMER_DEV_NAME);
-        return RT_ERROR;
-    }
-
-    /* 以读写方式打开设备 */
-    ret = rt_device_open(hw_dev, RT_DEVICE_OFLAG_RDWR);
-    if (ret != RT_EOK)
-    {
-        rt_kprintf("open %s device failed!\n", HWTIMER_DEV_NAME);
-        return ret;
-    }
-
-    /* 设置超时回调函数 */
-    rt_device_set_rx_indicate(hw_dev, timeout_cb);
-
-    rt_device_control(hw_dev, HWTIMER_CTRL_FREQ_SET, &freq);
-    mode = HWTIMER_MODE_PERIOD;
-    ret = rt_device_control(hw_dev, HWTIMER_CTRL_MODE_SET, &mode);
-    if (ret != RT_EOK)
-    {
-        rt_kprintf("set mode failed! ret is :%d\n", ret);
-        return ret;
-    }
-
-    timeout_s.sec = 0;      /* 秒 */
-    timeout_s.usec = 1000;     /* 微秒 */
-    if (rt_device_write(hw_dev, 0, &timeout_s, sizeof(timeout_s)) != sizeof(timeout_s))
-    {
-        rt_kprintf("set timeout value failed\n");
-        return RT_ERROR;
-    }
-}
+// int TIM_Init(void)
+// {
+//     rt_err_t ret = RT_EOK;
+//     rt_hwtimerval_t timeout_s;      /* 定时器超时值 */
+//     rt_device_t hw_dev = RT_NULL;   /* 定时器设备句柄 */
+//     rt_hwtimer_mode_t mode;         /* 定时器模式 */
+//     rt_uint32_t freq = 10000;               /* 计数频率 */
+//
+//     /* 查找定时器设备 */
+//     hw_dev = rt_device_find("timer4" );
+//     if (hw_dev == RT_NULL)
+//     {
+//         rt_kprintf("hwtimer sample run failed! can't find %s device!\n", HWTIMER_DEV_NAME);
+//         return RT_ERROR;
+//     }
+//
+//     /* 以读写方式打开设备 */
+//     ret = rt_device_open(hw_dev, RT_DEVICE_OFLAG_RDWR);
+//     if (ret != RT_EOK)
+//     {
+//         rt_kprintf("open %s device failed!\n", HWTIMER_DEV_NAME);
+//         return ret;
+//     }
+//
+//     /* 设置超时回调函数 */
+//     rt_device_set_rx_indicate(hw_dev, timeout_cb);
+//
+//     rt_device_control(hw_dev, HWTIMER_CTRL_FREQ_SET, &freq);
+//     mode = HWTIMER_MODE_PERIOD;
+//     ret = rt_device_control(hw_dev, HWTIMER_CTRL_MODE_SET, &mode);
+//     if (ret != RT_EOK)
+//     {
+//         rt_kprintf("set mode failed! ret is :%d\n", ret);
+//         return ret;
+//     }
+//
+//     timeout_s.sec = 0;      /* 秒 */
+//     timeout_s.usec = 1000;     /* 微秒 */
+//     if (rt_device_write(hw_dev, 0, &timeout_s, sizeof(timeout_s)) != sizeof(timeout_s))
+//     {
+//         rt_kprintf("set timeout value failed\n");
+//         return RT_ERROR;
+//     }
+// }
 
 static struct chassis_real_speed_t omni_get_speed(dji_motor_object_t *chassis_motor[4])//里程计计算函数。
 {

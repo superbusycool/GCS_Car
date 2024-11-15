@@ -145,10 +145,10 @@ SET(RT_DRIVERS_SOURCES
 )
 
 SET(RT_FINSH_SOURCES
-	rt-thread/components/finsh/shell.c
-	rt-thread/components/finsh/msh.c
-	rt-thread/components/finsh/cmd.c
 	rt-thread/components/finsh/msh_parse.c
+	rt-thread/components/finsh/cmd.c
+	rt-thread/components/finsh/msh.c
+	rt-thread/components/finsh/shell.c
 )
 
 SET(RT_KERNEL_SOURCES
@@ -181,30 +181,30 @@ SET(RT_LIBCPU_SOURCES
 )
 
 SET(RT_LIBRARIES_SOURCES
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+	libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
-	libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
 )
 
 SET(RT_POSIX_SOURCES
@@ -212,37 +212,37 @@ SET(RT_POSIX_SOURCES
 
 SET(RT_RM_ALGORITHMS_SOURCES
 	src/algorithm/QuaternionEKF/QuaternionEKF.c
+	src/algorithm/ramp/ramp.c
+	src/algorithm/user_lib/user_lib.c
+	src/algorithm/pid/pid.c
 	src/algorithm/filter/filter32.c
 	src/algorithm/kalman_filter/kalman_filter.c
-	src/algorithm/pid/pid.c
-	src/algorithm/user_lib/user_lib.c
-	src/algorithm/ramp/ramp.c
 )
 
 SET(RT_RM_MODULES_SOURCES
-	src/modules/referee/bsp_referee_UI/fifo.c
-	src/modules/usr_callback.c
-	src/modules/rc/keyboard/keyboard.c
-	src/modules/mag/ist8310/ist8310.c
-	src/modules/referee/bsp_referee_UI/BSP_CRC.c
-	src/modules/referee/Referee.c
-	src/modules/dwt/drv_dwt.c
-	src/modules/referee/bsp_referee_UI/UI_print.c
-	src/modules/referee/bsp_referee_UI/Referee_system.c
 	src/modules/motor/DJI_motor/dji_motor.c
-	src/modules/msg/drv_msg.c
+	src/modules/referee/bsp_referee_UI/UI_print.c
+	src/modules/referee/bsp_referee_UI/fifo.c
+	src/modules/rc/keyboard/keyboard.c
 	src/modules/rc/dbus/rc_dbus.c
+	src/modules/dwt/drv_dwt.c
+	src/modules/usr_callback.c
+	src/modules/referee/Referee.c
+	src/modules/msg/drv_msg.c
+	src/modules/referee/bsp_referee_UI/BSP_CRC.c
+	src/modules/referee/bsp_referee_UI/Referee_system.c
+	src/modules/mag/ist8310/ist8310.c
 )
 
 SET(RT_RM_TASK_SOURCES
-	src/task/transmission/transmission_task.c
-	src/task/motor/motor_task.c
 	src/task/gimbal/gimbal_task.c
-	src/task/chassis/chassis_task.c
-	src/task/example/example_task.c
-	src/task/shoot/shoot_task.c
-	src/task/cmd/cmd_task.c
 	src/task/robot.c
+	src/task/chassis/chassis_task.c
+	src/task/shoot/shoot_task.c
+	src/task/motor/motor_task.c
+	src/task/transmission/transmission_task.c
+	src/task/example/example_task.c
+	src/task/cmd/cmd_task.c
 )
 
 SET(RT_SMP_SOURCES

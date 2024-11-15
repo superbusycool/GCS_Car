@@ -1,5 +1,5 @@
 D:\Applications\development\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/Applications/development/CLion/bin/ninja/win/x64/ninja.exe "-DCMAKE_C_COMPILER=D:/Applications/development/5.4 2016q3/bin/arm-none-eabi-gcc.exe" -G Ninja -S D:\Development\Code\Embeded\GCS_old\project1 -B D:\Development\Code\Embeded\GCS_old\project1\cmake-build-debug
--- Configuring done (0.0s)
+-- Configuring done (0.1s)
 You have changed variables that require your cache to be deleted.
 Configure will be re-run and you may have to reset some variables.
 The following variables have changed:
@@ -19,6 +19,6 @@ CMAKE_C_COMPILER= D:/Applications/development/5.4 2016q3/bin/arm-none-eabi-gcc.e
 -- Check for working CXX compiler: D:/Applications/development/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (2.0s)
+-- Configuring done (2.1s)
 -- Generating done (0.1s)
 -- Build files have been written to: D:/Development/Code/Embeded/GCS_old/project1/cmake-build-debug

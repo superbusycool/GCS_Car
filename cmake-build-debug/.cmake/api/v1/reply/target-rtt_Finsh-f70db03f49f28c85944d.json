@@ -2,22 +2,16 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CMakeFiles/rtt_RM_Algorithms.dir/./src/algorithm/QuaternionEKF/QuaternionEKF.c.obj"
+			"path" : "CMakeFiles/rtt_Finsh.dir/./rt-thread/components/finsh/msh_parse.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_RM_Algorithms.dir/./src/algorithm/filter/filter32.c.obj"
+			"path" : "CMakeFiles/rtt_Finsh.dir/./rt-thread/components/finsh/cmd.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_RM_Algorithms.dir/./src/algorithm/kalman_filter/kalman_filter.c.obj"
+			"path" : "CMakeFiles/rtt_Finsh.dir/./rt-thread/components/finsh/msh.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_RM_Algorithms.dir/./src/algorithm/pid/pid.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_RM_Algorithms.dir/./src/algorithm/user_lib/user_lib.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_RM_Algorithms.dir/./src/algorithm/ramp/ramp.c.obj"
+			"path" : "CMakeFiles/rtt_Finsh.dir/./rt-thread/components/finsh/shell.c.obj"
 		}
 	],
 	"backtrace" : 1,
@@ -41,7 +35,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 286,
+				"line" : 282,
 				"parent" : 0
 			},
 			{
@@ -327,14 +321,12 @@
 				0,
 				1,
 				2,
-				3,
-				4,
-				5
+				3
 			]
 		}
 	],
-	"id" : "rtt_RM_Algorithms::@6890427a1f51a3e7e1df",
-	"name" : "rtt_RM_Algorithms",
+	"id" : "rtt_Finsh::@6890427a1f51a3e7e1df",
+	"name" : "rtt_Finsh",
 	"paths" : 
 	{
 		"build" : ".",
@@ -349,9 +341,7 @@
 				0,
 				1,
 				2,
-				3,
-				4,
-				5
+				3
 			]
 		}
 	],
@@ -360,37 +350,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/algorithm/QuaternionEKF/QuaternionEKF.c",
+			"path" : "rt-thread/components/finsh/msh_parse.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/algorithm/filter/filter32.c",
+			"path" : "rt-thread/components/finsh/cmd.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/algorithm/kalman_filter/kalman_filter.c",
+			"path" : "rt-thread/components/finsh/msh.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/algorithm/pid/pid.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/algorithm/user_lib/user_lib.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/algorithm/ramp/ramp.c",
+			"path" : "rt-thread/components/finsh/shell.c",
 			"sourceGroupIndex" : 0
 		}
 	],

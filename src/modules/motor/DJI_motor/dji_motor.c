@@ -23,7 +23,7 @@ static uint8_t idx = 0; // register idx,是该文件的全局电机索引,在注
 /* DJI电机的实例,此处仅保存指针,内存的分配将通过电机实例初始化时通过malloc()进行 */
 static dji_motor_object_t *dji_motor_obj[DJI_MOTOR_CNT] = {NULL};
 
-static uint32_t Motor_DWT_CNT = 0;
+static uint32_t Motor_DWT_CNT[4] = {0};
 
 #define PWM_DEV_NAME        "pwm1"  /* Chassis PWM设备名称 */
 struct rt_device_pwm *chassis_pwm_dev;      /* PWM设备句柄 */
@@ -71,10 +71,11 @@ static void decode_dji_motor(dji_motor_object_t *motor)
     // rt_timer_start(motor->timer);  // 重置电机定时器
 
     // 解析数据
+
     rt_device_read(motor->pulse_dev,0,&measure->ecd,1);
     measure->total_angle = measure->ecd*ECD_ANGLE_COEF_GM310;
     measure->speed_rpm = (1.0f - SPEED_SMOOTH_COEF) * measure->speed_rpm + SPEED_SMOOTH_COEF *
-        (float)(measure->ecd - measure->last_ecd)/(dwt_get_delta(&Motor_DWT_CNT)*GM310_ECD_RATE)*60;
+        (float)(measure->ecd - measure->last_ecd)/(dwt_get_delta(Motor_DWT_CNT+motor->id)*GM310_ECD_RATE)*60;
     measure->last_ecd = measure->ecd;
 }
 
@@ -114,8 +115,7 @@ void dji_motor_control()
         set = motor->control(measure); // 调用对接的电机控制器计算
 
         // 若该电机处于停止状态,直接将buff置零
-        if (motor->stop_flag == MOTOR_STOP)
-            for(int8_t k = 0; k < 4; ++k)
+        if (motor->stop_flag == MOTOR_STOP )
                 set = 0;
         GM310_Set_Output(set,motor);
 
@@ -147,13 +147,15 @@ dji_motor_object_t *dji_motor_register(motor_config_t *config, void *control)
     //                          object, 20,
     //                          RT_TIMER_FLAG_PERIODIC);
     // rt_timer_start(object->timer);
-    #define PWM_DEV_NAME        "pwm1"  /* PWM设备名称 */
-    /* 查找设备 */
-    chassis_pwm_dev = (struct rt_device_pwm *)rt_device_find(PWM_DEV_NAME);
-    if (chassis_pwm_dev == RT_NULL)
+    if(idx == 0)
     {
-        rt_kprintf("pwm sample run failed! can't find %s device!\n", PWM_DEV_NAME);
-        return RT_ERROR;
+           /* 查找设备 */
+        chassis_pwm_dev = (struct rt_device_pwm *)rt_device_find(PWM_DEV_NAME);
+        if (chassis_pwm_dev == RT_NULL)
+            {
+            rt_kprintf("pwm sample run failed! can't find %s device!\n", PWM_DEV_NAME);
+            return RT_ERROR;
+            }
     }
 
     if (object->motor_type == GM310)
@@ -163,7 +165,6 @@ dji_motor_object_t *dji_motor_register(motor_config_t *config, void *control)
 
         /* 查找 编码器 设备 */
         object->pulse_dev = rt_device_find(config->pulse_name);
-        rt_device_control(object->pulse_dev,PULSE_ENCODER_CMD_CLEAR_COUNT,RT_NULL); //清零
         /* 以只读方式打开设备 */
         if(rt_device_open(object->pulse_dev, RT_DEVICE_OFLAG_RDONLY) != RT_EOK)
         {

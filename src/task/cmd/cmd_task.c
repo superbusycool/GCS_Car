@@ -412,7 +412,7 @@ static void remote_to_cmd_pc_controler(void)
             if (gim_fdb.back_mode == BACK_IS_OK)
             {
                 gim_cmd.ctrl_mode = GIMBAL_GYRO;
-                chassis_cmd.ctrl_mode = CHASSIS_FOLLOW_GIMBAL;
+                chassis_cmd.ctrl_mode = CHASSIS_FOLLOW_ROAD;
                 shoot_cmd.ctrl_mode=SHOOT_COUNTINUE;
                 memset(r_buffer_point,0,sizeof (*r_buffer_point));
             }
@@ -437,7 +437,7 @@ static void remote_to_cmd_pc_controler(void)
             if (gim_fdb.back_mode == BACK_IS_OK)
             {/* 判断归中是否完成 */
                 gim_cmd.ctrl_mode = GIMBAL_AUTO;
-                chassis_cmd.ctrl_mode = CHASSIS_FOLLOW_GIMBAL;
+                chassis_cmd.ctrl_mode = CHASSIS_FOLLOW_ROAD;
                 shoot_cmd.ctrl_mode=SHOOT_COUNTINUE;
             }
             else if(gim_fdb.back_mode==BACK_STEP)
@@ -448,27 +448,6 @@ static void remote_to_cmd_pc_controler(void)
         }
     }
 
-    /*TODO:小陀螺*/
-    if(km.e_sta==KEY_PRESS_ONCE)
-    {
-        key_e_status=-key_e_status;
-    }
-    if ( key_e_status==1||rc_now->sw1==RC_DN)
-    {
-        if (gim_fdb.back_mode==BACK_IS_OK)
-        {
-            chassis_cmd.ctrl_mode=CHASSIS_SPIN;
-        }
-        else
-        {
-            chassis_cmd.ctrl_mode=CHASSIS_RELAX;
-            gim_cmd.ctrl_mode=GIMBAL_INIT;
-        }
-    }
-    if (chassis_cmd.ctrl_mode==CHASSIS_SPIN)
-    {
-        chassis_cmd.vw=2;
-    }
     /*TODO:--------------------------------------------------发射模块状态机--------------------------------------------------------------*/
     /*-----------------------------------------开关摩擦轮--------------------------------------------*/
     if(km.f_sta==KEY_PRESS_ONCE)
@@ -617,7 +596,7 @@ static void remote_to_cmd_sbus(void)
     case RC_UP:
         if(gim_cmd.ctrl_mode != GIMBAL_INIT && gim_cmd.ctrl_mode != GIMBAL_RELAX)
         {
-            chassis_cmd.ctrl_mode = CHASSIS_FOLLOW_GIMBAL;
+            chassis_cmd.ctrl_mode = CHASSIS_FOLLOW_ROAD;
         }
         else
         {

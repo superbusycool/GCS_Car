@@ -50,7 +50,7 @@ int robot_task_init(void)
                                              1024,15, 10);
     /* 如果获得线程控制块，启动这个线程 */
     if (example_thread_handle != RT_NULL)
-        rt_thread_startup(example_thread_handle);
+        // rt_thread_startup(example_thread_handle);
 #endif /* BSP_USING_EXAMPLE_TASK */
 
 #ifdef BSP_USING_INS_TASK
@@ -90,7 +90,7 @@ int robot_task_init(void)
                                               1024,15, 10);
     /* 如果获得线程控制块，启动这个线程 */
     if (chassis_thread_handle != RT_NULL)
-//        rt_thread_startup(chassis_thread_handle);
+        rt_thread_startup(chassis_thread_handle);
 #endif /* BSP_USING_CHASSIS_TASK */
 
 #ifdef BSP_USING_GIMBAL_TASK

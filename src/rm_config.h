@@ -73,12 +73,12 @@
 /* 底盘轴距(mm) */
 #define WHEELBASE         388
 /* 底盘轮子周长(mm) */
-#define WHEEL_PERIMETER   471
+#define WHEEL_PERIMETER   15
 
 #define LENGTH_RADIUS 230 //底盘的半径(mm)
 
 /******** 底盘电机使用3508 *******/
-/* 3508底盘电机减速比 */
+/* GM310底盘电机减速比 */
 #define CHASSIS_DECELE_RATIO (1.0f/19.0f)
 /* 单个电机速度极限，单位是分钟每转 */
 #define MAX_WHEEL_RPM        9000   //8347rpm = 3500mm/s
