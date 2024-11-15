@@ -1,0 +1,1252 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "rtthread.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_DEFINITIONS",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 305,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 301,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g -std=gnu11 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "ARM_MATH_CM4"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "RT_USING_LIBC"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "RT_USING_NEWLIBC"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "STM32F407xx"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "USE_HAL_DRIVER"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_POSIX_C_SOURCE=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__RTTHREAD__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/applications"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/libc/compilers/common/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/libc/compilers/newlib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/drivers/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/drivers/spi"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/drivers/spi/sfud/inc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/board"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/board/CubeMX_Config/Inc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/board/ports"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/libraries/HAL_Drivers/drivers"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/libraries/HAL_Drivers/drivers/config"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/libraries/HAL_Drivers"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/libraries/HAL_Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/finsh"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/libcpu/arm/common"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/libcpu/arm/cortex-m4"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/libc/posix/io/epoll"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/libc/posix/io/eventfd"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/libc/posix/io/poll"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/libc/posix/ipc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/user_lib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/pid"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/QuaternionEKF"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/filter"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/kalman_filter"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/ramp"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/arm_math"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/motor"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/motor/DJI_motor"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/dwt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/msg"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/mag"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/mag/ist8310"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/rc/dbus"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/rc/keyboard"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/referee"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/modules/referee/bsp_referee_UI"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task/example"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task/motor"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task/cmd"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task/chassis"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task/gimbal"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task/transmission"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src/task/shoot"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/rt-thread/components/drivers/smp"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Development/Code/Embeded/GCS_old/project1/src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "rtt_Finsh::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_Compiler::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_DeviceDrivers::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_RM_Algorithms::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_RM_Modules::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_RM_Task::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_Kernel::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_libcpu::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_Libraries::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtt_Drivers::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "rtthread.elf::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T D:/Development/Code/Embeded/GCS_old/project1/board/linker_scripts/link.lds -Wl,--gc-sections,--print-memory-usage",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LD:\\Development\\Code\\Embeded\\GCS_old\\project1\\src\\algorithm\\arm_math",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-larm_cortexM4lf_math",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "rtthread.elf",
+	"nameOnDisk" : "rtthread.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "applications/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cctype.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cstdlib.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cstring.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/ctime.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cunistd.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cwchar.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/newlib/syscalls.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/core/device.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/hwtimer/hwtimer.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/completion_comm.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/completion_up.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/condvar.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/dataqueue.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/pipe.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/ringblk_buf.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/ringbuffer.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/waitqueue.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/workqueue.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/misc/pulse_encoder.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/misc/rt_drv_pwm.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/pin/dev_pin.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/rtc/dev_rtc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/serial/dev_serial.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/dev_spi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/dev_spi_core.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/dev_spi_flash_sfud.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/sfud/src/sfud.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/sfud/src/sfud_sfdp.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/board/CubeMX_Config/Src/stm32f4xx_hal_msp.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/board/board.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_gpio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_pulse_encoder.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_pwm.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_spi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_tim.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_usart.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drv_common.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f407xx.s.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/shell.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/msh.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/cmd.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/msh_parse.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/clock.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/components.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/cpu_up.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/defunct.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/idle.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/ipc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/irq.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/klibc/kerrno.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/klibc/kstdio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/klibc/kstring.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/kservice.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/mem.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/mempool.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/object.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/scheduler_comm.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/scheduler_up.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/thread.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/timer.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/common/atomic_arm.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/common/div0.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/common/showmem.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/cortex-m4/context_gcc.S.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/cortex-m4/cpuport.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/QuaternionEKF/QuaternionEKF.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/filter/filter32.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/kalman_filter/kalman_filter.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/pid/pid.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/user_lib/user_lib.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/ramp/ramp.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/referee/bsp_referee_UI/fifo.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/rc/keyboard/keyboard.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/mag/ist8310/ist8310.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/referee/bsp_referee_UI/BSP_CRC.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/referee/Referee.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/referee/bsp_referee_UI/UI_print.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/referee/bsp_referee_UI/Referee_system.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/motor/DJI_motor/dji_motor.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/rc/dbus/rc_dbus.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/transmission/transmission_task.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/motor/motor_task.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/gimbal/gimbal_task.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/chassis/chassis_task.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/example/example_task.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/shoot/shoot_task.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/cmd/cmd_task.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/robot.c.obj",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}
