@@ -23,9 +23,9 @@
 extern "C" {
 #endif
 
-#ifdef BSP_USING_BMI088
-#include "bmi088.h"
-#endif /* BSP_USING_BMI088 */
+#ifdef BSP_USING_ADIS16467
+#include "adis16467.h"
+#endif /* BSP_USING_ADIS16467 */
 
 /* ---------------------------------- GYRO ---------------------------------- */
 /* gyro range type */
@@ -82,9 +82,8 @@ struct accel_configure {
 struct imu_ops{
     rt_err_t (*imu_init)(void);
     rt_err_t (*gyro_read)(float data[3]);
-    rt_err_t (*gyro_config)(struct gyro_configure cfg);
     rt_err_t (*accel_read)(float data[3]);
-    rt_err_t (*accel_config)(struct accel_configure cfg);
+    rt_err_t (*burst_read)(float accel[3],float gyro[3],float temp);
     float (*temp_read)(void);
 };
 

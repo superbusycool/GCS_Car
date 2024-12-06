@@ -1,0 +1,150 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "rtthread",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Compiler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Compiler-Debug-49be04bc8bdcc42e99fe.json",
+					"name" : "rtt_Compiler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_DeviceDrivers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_DeviceDrivers-Debug-0a139b3b6c5c76b7bd80.json",
+					"name" : "rtt_DeviceDrivers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Drivers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Drivers-Debug-c305165f32f59d901df0.json",
+					"name" : "rtt_Drivers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Finsh::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Finsh-Debug-3221a9c6e6ea114df671.json",
+					"name" : "rtt_Finsh",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Kernel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Kernel-Debug-8c30276ade01c26ad819.json",
+					"name" : "rtt_Kernel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Libraries::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Libraries-Debug-ad02403c92aecfbef182.json",
+					"name" : "rtt_Libraries",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_RM_Algorithms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_RM_Algorithms-Debug-479ae576b618cfab74ed.json",
+					"name" : "rtt_RM_Algorithms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_RM_Modules::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_RM_Modules-Debug-bebff78cc2b3cc427fec.json",
+					"name" : "rtt_RM_Modules",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_RM_Task::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_RM_Task-Debug-b0b624065a406f857203.json",
+					"name" : "rtt_RM_Task",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_libcpu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_libcpu-Debug-154fe545c75ab0eb9ce2.json",
+					"name" : "rtt_libcpu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtthread.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtthread.elf-Debug-26a11f884fb660d40c7d.json",
+					"name" : "rtthread.elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug",
+		"source" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4/context_gcc.S
+

@@ -14,28 +14,7 @@
 #define DBG_LVL DBG_INFO
 #include <rtdbg.h>
 
-/* ----------------------------- IMU_TEMPRETURE ----------------------------- */
-#define TEMP_PWM_DEV_NAME        "pwm10"        /* PWM设备名称 */
-#define TEMP_PWM_DEV_CHANNEL      1             /* PWM通道 */
-#define IMU_TARGET_TEMP           40            /* imu期望恒温温度 */
 
-static struct rt_device_pwm *temp_pwm_dev;      /* 温度PWM设备句柄 */
-static rt_uint32_t period = 250000;
-static rt_uint32_t pulse = 0;
-static float temp;
-static pid_obj_t *imu_temp_pid;
-// TODO:使用宏替换
-static pid_config_t imu_temp_config = {
-        .Kp = 50000, // 4.5
-        .Ki = 8000,  // 0
-        .Kd = 0,  // 0
-        .IntegralLimit = 50000,
-        .Improve = PID_Integral_Limit,
-        .MaxOut = 250000,
-};
-
-static rt_err_t temp_pwm_init(rt_uint32_t period, rt_uint32_t pulse);
-/* ----------------------------- IMU_TEMPRETURE ----------------------------- */
 #define X 0
 #define Y 1
 #define Z 2
@@ -69,8 +48,6 @@ void ins_thread_entry(void *argument)
     static uint32_t count = 0;
     const float gravity[3] = {0, 0, 9.81f};
 
-    temp_pwm_init(period, pulse);
-    imu_temp_pid = pid_register(&imu_temp_config);   /* 注册 PID 实例 */
     imu_ops.imu_init();
 
     dt = dwt_get_delta(&ins_dwt);
@@ -135,15 +112,7 @@ void ins_thread_entry(void *argument)
             pub_push_msg(ins_pub, &ins_msg_p);
         }
 
- /* ------------------------ temperature control 500hz ----------------------- */
-        if ((count % 2) == 0)
-        {
-            temp = imu_ops.temp_read();
-            pulse = pid_calculate(imu_temp_pid, temp, IMU_TARGET_TEMP);
-            rt_pwm_set_pulse(temp_pwm_dev, TEMP_PWM_DEV_CHANNEL, pulse);
-        }
 
-        count++;
 
 /* ------------------------------ 调试监测线程调度 ------------------------------ */
         ins_dt = dwt_get_time_ms() - ins_start;
@@ -154,19 +123,7 @@ void ins_thread_entry(void *argument)
     }
 }
 
-static rt_err_t temp_pwm_init(rt_uint32_t period, rt_uint32_t pulse)
-{
-    temp_pwm_dev = (struct rt_device_pwm *)rt_device_find(TEMP_PWM_DEV_NAME);
-    if (temp_pwm_dev == RT_NULL)
-    {
-        LOG_E("Can't find %s device!", TEMP_PWM_DEV_NAME);
-        return -RT_ERROR;
-    }
-    /* 设置PWM周期和脉冲宽度默认值 */
-    rt_pwm_set(temp_pwm_dev, TEMP_PWM_DEV_CHANNEL, period, pulse);
-    /* 使能设备 */
-    rt_pwm_enable(temp_pwm_dev, TEMP_PWM_DEV_CHANNEL);
-}
+
 
 /**
  * @brief 初始化 ins 解算系统

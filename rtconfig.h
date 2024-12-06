@@ -337,43 +337,17 @@
 #define BSP_USING_GPIO
 #define BSP_USING_UART
 #define BSP_USING_UART1
-#define BSP_UART1_RX_USING_DMA
 #define BSP_UART1_TX_USING_DMA
-#define BSP_USING_UART2
-#define BSP_UART2_RX_USING_DMA
-#define BSP_USING_TIM
-#define BSP_USING_TIM11
-#define BSP_USING_TIM13
-#define BSP_USING_TIM14
-#define BSP_USING_PWM
-#define BSP_USING_PWM1
-#define BSP_USING_PWM1_CH1
-#define BSP_USING_PWM1_CH2
-#define BSP_USING_PWM1_CH3
-#define BSP_USING_PWM1_CH4
-#define BSP_USING_PWM8
-#define BSP_USING_PWM8_CH1
-#define BSP_USING_PWM8_CH2
-#define BSP_USING_PWM8_CH3
-#define BSP_USING_PWM8_CH4
-#define BSP_USING_PULSE_ENCODER
-#define BSP_USING_PULSE_ENCODER2
-#define BSP_USING_PULSE_ENCODER3
-#define BSP_USING_PULSE_ENCODER4
-#define BSP_USING_PULSE_ENCODER5
+#define BSP_USING_SPI
+#define BSP_USING_SPI1
 /* end of On-chip Peripheral Drivers */
 
 /* RoboMaster Modules */
 
-#define BSP_USING_MOTOR
-#define BSP_USING_DJI_MOTOR
 #define BSP_USING_DWT
 #define BSP_USING_PS_MSG
-#define BSP_USING_MAG
-#define BSP_USING_IST8310
-#define BSP_USING_RC_DBUS
-#define BSP_USING_RC_KEYBOARD
-#define BSP_USING_REFEREE
+#define BSP_USING_IMU
+#define BSP_USING_ADIS16467
 /* end of RoboMaster Modules */
 
 /* RoboMaster Algorithms */
@@ -387,20 +361,8 @@
 
 /* RoboMaster Tasks */
 
-#define BSP_USING_EXAMPLE_TASK
-#define BSP_USING_MOTOR_TASK
-#define BSP_USING_CMD_TASK
-#define BSP_USING_CHASSIS_TASK
-#define BSP_CHASSIS_OMNI_MODE
-#define BSP_USING_GIMBAL_TASK
-#define BSP_USING_TRANSMISSION_TASK
-#define BSP_USING_SHOOT_TASK
+#define BSP_USING_INS_TASK
 /* end of RoboMaster Tasks */
-
-/* RoboMaster Robot Types */
-
-#define WHEEL_OMNI_INFANTRY
-/* end of RoboMaster Robot Types */
 /* end of Hardware Drivers Config */
 
 #endif

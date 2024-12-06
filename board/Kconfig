@@ -414,22 +414,6 @@ endmenu
 
 
 menu "RoboMaster Modules"
-    menuconfig BSP_USING_MOTOR
-        bool "Select USING Motors"
-        default y
-        if BSP_USING_MOTOR
-            config BSP_USING_DJI_MOTOR
-                bool "Using DJI Motors"
-                default y
-
-            config BSP_USING_HT_MOTOR
-                bool "Using HT Motors"
-                default n
-
-            config BSP_USING_LK_MOTOR
-                bool "Using LK Motors"
-                default n
-        endif
 
     config BSP_USING_DWT
         bool "Enable DWT"
@@ -439,48 +423,22 @@ menu "RoboMaster Modules"
         bool "Enable Pub Sub Message"
         default y
 
-    menuconfig BSP_USING_MAG
-        bool "Enable Magnetometer"
-        default y
-        if BSP_USING_MAG
-            config BSP_USING_IST8310
-                bool "Using IST8310"
-                default y
-        endif
 
     menuconfig BSP_USING_IMU
         bool "Enable IMU"
         default y
         if BSP_USING_IMU
-            config BSP_USING_BMI088
-                bool "Using BMI088"
+            config BSP_USING_ADIS16467
+                bool "Using ADIS16467"
                 default y
-                if BSP_USING_BMI088
-                    config BSP_BMI088_CALI
-                    bool "Calibrate BMI088 (Get more info in BMI088 README)"
+                if BSP_USING_ADIS16467
+                    config BSP_ADIS16467_CALI
+                    bool "Calibrate ADIS16467 (Get more info in ADIS16467 README)"
                     default n
                 endif
         endif
     
-    config BSP_USING_RC_SBUS
-        bool "Enable RC SBUS"
-        default n
 
-    config BSP_USING_RC_DBUS
-        bool "Enable RC DBUS"
-        default y
-
-    config BSP_USING_RC_KEYBOARD
-        bool "Enable RC KEYBOARD"
-        default y
-
-    config BSP_USING_REFEREE
-        bool "Enable REFEREE"
-        default y
-
-    config BSP_USING_LEG
-        bool "Enable Leg Solve"
-        default n
 
 endmenu
 
@@ -509,70 +467,13 @@ menu "RoboMaster Algorithms"
 endmenu
 
 menu "RoboMaster Tasks"
-    config BSP_USING_EXAMPLE_TASK
-        bool "Select USING Example Task"
-        default n
 
     config BSP_USING_INS_TASK
         bool "Select USING Ins Task"
         default y
 
-    config BSP_USING_MOTOR_TASK
-        bool "Select USING Motor Task"
-        default y
-
-    config BSP_USING_CMD_TASK
-        bool "Select USING Cmd Task"
-        default y
-
-    menuconfig BSP_USING_CHASSIS_TASK
-        bool "Select USING Chassis Task"
-        default y
-        if BSP_USING_CHASSIS_TASK
-            config BSP_CHASSIS_OMNI_MODE
-                bool "Select Chassis Omni Mode"
-                default y
-            config BSP_CHASSIS_MECANUM_MODE
-                bool "Select Chassis Mecanum Mode"
-                default n
-        endif
-    
-    config BSP_USING_GIMBAL_TASK
-        bool "Select USING Gimbal Task"
-        default y
-
-    config BSP_USING_TRANSMISSION_TASK
-        bool "Select USING Transmission Task"
-        default y
-
-    config BSP_USING_SHOOT_TASK
-        bool "Select USING Shoot Task"
-        default y
-
-    config BSP_USING_REFEREE_TASK
-            bool "Select USING Referee Task"
-            default y
-
 endmenu
 
-menu "RoboMaster Robot Types"
-    config WHEEL_LEG_INFANTRY
-        bool "Select Wheel Leg Infantry"
-        default n
-        select BSP_USING_LEG
-        select BSP_USING_MOTOR
-        select BSP_USING_RC_SBUS
-        select BSP_USING_PID
-        select BSP_USING_KALMAN_FILTER
-        select BSP_USING_INS_TASK
-        select BSP_USING_MOTOR_TASK
-        select BSP_USING_CMD_TASK
-    config WHEEL_OMNI_INFANTRY
-         bool "Select Wheel OMNI Infantry"
-         default y
-    config WHEEL_OMNI_SENTRY
-         bool "Select Wheel OMNI SENTRY"
-         default n
-endmenu
+
 
 endmenu

@@ -1,4 +1,4 @@
-# Install script for directory: D:/Development/Code/Embeded/GCS_old/project1
+# Install script for directory: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/Applications/development/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/ENV/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Development/Code/Embeded/GCS_old/project1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

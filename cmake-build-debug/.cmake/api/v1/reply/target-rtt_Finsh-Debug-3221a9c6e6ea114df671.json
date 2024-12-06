@@ -1,0 +1,328 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/msh_parse.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/msh.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/cmd.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/shell.c.obj"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_DEFINITIONS",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 253,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g -g -std=gnu11 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "ARM_MATH_CM4"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "RT_USING_LIBC"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "RT_USING_NEWLIBC"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "STM32F407xx"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "USE_HAL_DRIVER"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_POSIX_C_SOURCE=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "__RTTHREAD__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"id" : "rtt_Finsh::@6890427a1f51a3e7e1df",
+	"name" : "rtt_Finsh",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "rt-thread/components/finsh/msh_parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "rt-thread/components/finsh/msh.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "rt-thread/components/finsh/cmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "rt-thread/components/finsh/shell.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

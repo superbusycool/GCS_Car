@@ -1,0 +1,2221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rtthread"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Compiler">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rtt_Compiler.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Compiler"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Compiler/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rtt_Compiler.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Compiler/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_DeviceDrivers">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rtt_DeviceDrivers.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__RT_IPC_SOURCE__"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_DeviceDrivers"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_DeviceDrivers/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rtt_DeviceDrivers.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__RT_IPC_SOURCE__"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_DeviceDrivers/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Drivers">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/rtt_Drivers.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Drivers"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Drivers/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/rtt_Drivers.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Drivers/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Finsh">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rtt_Finsh.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Finsh"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Finsh/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rtt_Finsh.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Finsh/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Kernel">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rtt_Kernel.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__RT_KERNEL_SOURCE__"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Kernel"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Kernel/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rtt_Kernel.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__RT_KERNEL_SOURCE__"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Kernel/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_libcpu">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rtt_libcpu.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_libcpu"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_libcpu/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rtt_libcpu.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_libcpu/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Libraries">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/rtt_Libraries.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Libraries"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_Libraries/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/rtt_Libraries.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_Libraries/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_RM_Algorithms">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/rtt_RM_Algorithms.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_RM_Algorithms"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_RM_Algorithms/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/rtt_RM_Algorithms.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_RM_Algorithms/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_RM_Modules">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/rtt_RM_Modules.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_RM_Modules"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_RM_Modules/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/rtt_RM_Modules.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_RM_Modules/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_RM_Task">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/rtt_RM_Task.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_RM_Task"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtt_RM_Task/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/rtt_RM_Task.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtt_RM_Task/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtthread.elf">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/rtthread.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtthread.elf"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtthread.elf/fast">
+				<Option output="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/rtthread.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/ports"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/config"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/."/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/epoll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/eventfd"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\env\env-windows\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtthread.elf/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications/main.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/CubeMX_Config/Src/stm32f4xx_hal_msp.c">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/board.c">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/board/board.h">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cctype.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cstdlib.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cstring.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/ctime.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cunistd.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/common/cwchar.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Compiler.dir/rt-thread/components/libc/compilers/newlib/syscalls.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/core/device.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/hwtimer/hwtimer.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/completion_comm.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/completion_up.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/condvar.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/dataqueue.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/pipe.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/ringblk_buf.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/ringbuffer.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/waitqueue.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/ipc/workqueue.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/misc/pulse_encoder.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/misc/rt_drv_pwm.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/pin/dev_pin.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/rtc/dev_rtc.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/serial/dev_serial.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/dev_spi.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/dev_spi_core.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/dev_spi_flash_sfud.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/sfud/src/sfud.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_DeviceDrivers.dir/rt-thread/components/drivers/spi/sfud/src/sfud_sfdp.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/board/CubeMX_Config/Src/stm32f4xx_hal_msp.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/board/board.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_gpio.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_spi.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drivers/drv_usart.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/HAL_Drivers/drv_common.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Drivers.dir/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f407xx.s.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/cmd.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/msh.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/msh_parse.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Finsh.dir/rt-thread/components/finsh/shell.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/clock.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/components.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/cpu_up.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/defunct.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/idle.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/ipc.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/irq.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/klibc/kerrno.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/klibc/kstdio.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/klibc/kstring.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/kservice.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/mem.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/mempool.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/object.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/scheduler_comm.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/scheduler_up.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/thread.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Kernel.dir/rt-thread/src/timer.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_Libraries.dir/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/QuaternionEKF/QuaternionEKF.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/filter/filter32.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/kalman_filter/kalman_filter.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/pid/pid.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/ramp/ramp.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/user_lib/user_lib.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/ins/ins_task.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Task.dir/src/task/robot.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/common/atomic_arm.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/common/div0.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/common/showmem.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/cortex-m4/context_gcc.S.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_libcpu.dir/rt-thread/libcpu/arm/cortex-m4/cpuport.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/drv_gpio.c">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/drv_gpio.h">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/drv_spi.c">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/drv_spi.h">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/drv_usart.c">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drivers/drv_usart.h">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drv_common.c">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/HAL_Drivers/drv_common.h">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f407xx.s">
+			<Option target="rtt_Drivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c">
+			<Option target="rtt_Libraries"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/core/device.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/hwtimer/hwtimer.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/completion_comm.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/completion_up.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/condvar.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/dataqueue.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/pipe.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/ringblk_buf.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/ringbuffer.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/waitqueue.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/ipc/workqueue.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/misc/pulse_encoder.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/misc/rt_drv_pwm.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/pin/dev_pin.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/rtc/dev_rtc.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/serial/dev_serial.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/dev_spi.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/dev_spi_core.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/dev_spi_flash_sfud.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/dev_spi_flash_sfud.h">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/src/sfud.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/spi/sfud/src/sfud_sfdp.c">
+			<Option target="rtt_DeviceDrivers"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh/cmd.c">
+			<Option target="rtt_Finsh"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh/msh.c">
+			<Option target="rtt_Finsh"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh/msh.h">
+			<Option target="rtt_Finsh"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh/msh_parse.c">
+			<Option target="rtt_Finsh"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh/msh_parse.h">
+			<Option target="rtt_Finsh"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh/shell.c">
+			<Option target="rtt_Finsh"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/finsh/shell.h">
+			<Option target="rtt_Finsh"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/cctype.c">
+			<Option target="rtt_Compiler"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/cstdlib.c">
+			<Option target="rtt_Compiler"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/cstring.c">
+			<Option target="rtt_Compiler"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/ctime.c">
+			<Option target="rtt_Compiler"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/cunistd.c">
+			<Option target="rtt_Compiler"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/common/cwchar.c">
+			<Option target="rtt_Compiler"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/libc/compilers/newlib/syscalls.c">
+			<Option target="rtt_Compiler"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common/atomic_arm.c">
+			<Option target="rtt_libcpu"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common/div0.c">
+			<Option target="rtt_libcpu"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/common/showmem.c">
+			<Option target="rtt_libcpu"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4/context_gcc.S">
+			<Option target="rtt_libcpu"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4/cpuport.c">
+			<Option target="rtt_libcpu"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/libcpu/arm/cortex-m4/cpuport.h">
+			<Option target="rtt_libcpu"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/clock.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/components.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/cpu_up.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/defunct.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/idle.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/ipc.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/irq.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/klibc/kerrno.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/klibc/kstdio.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/klibc/kstring.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/kservice.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/mem.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/mempool.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/object.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/scheduler_comm.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/scheduler_up.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/thread.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/src/timer.c">
+			<Option target="rtt_Kernel"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF/QuaternionEKF.c">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/QuaternionEKF/QuaternionEKF.h">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter/filter32.c">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/filter/filter32.h">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter/kalman_filter.c">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/kalman_filter/kalman_filter.h">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid/pid.c">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/pid/pid.h">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp/ramp.c">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/ramp/ramp.h">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib/user_lib.c">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib/user_lib.h">
+			<Option target="rtt_RM_Algorithms"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt/drv_dwt.c">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt/drv_dwt.h">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467/adis16467.c">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467/adis16467.h">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg/drv_msg.c">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg/drv_msg.h">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/usr_callback.c">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/usr_callback.h">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins/ins_task.c">
+			<Option target="rtt_RM_Task"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins/ins_task.h">
+			<Option target="rtt_RM_Task"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/robot.c">
+			<Option target="rtt_RM_Task"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

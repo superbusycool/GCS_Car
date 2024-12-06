@@ -6,18 +6,18 @@ SET(CMAKE_SYSTEM_PROCESSOR cortex-m4)
 
 SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-SET(CMAKE_C_COMPILER "D:/Applications/development/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe")
-SET(CMAKE_ASM_COMPILER "D:/Applications/development/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe")
+SET(CMAKE_C_COMPILER "C:/ENV/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe")
+SET(CMAKE_ASM_COMPILER "C:/ENV/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe")
 SET(CMAKE_C_FLAGS " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g")
 SET(CMAKE_ASM_FLAGS " -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -x assembler-with-cpp -Wa,-mimplicit-it=thumb  -gdwarf-2")
 SET(CMAKE_C_COMPILER_WORKS TRUE)
 
-SET(CMAKE_CXX_COMPILER "D:/Applications/development/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-g++.exe")
+SET(CMAKE_CXX_COMPILER "C:/ENV/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-g++.exe")
 SET(CMAKE_CXX_FLAGS " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g")
 SET(CMAKE_CXX_COMPILER_WORKS TRUE)
 
-SET(CMAKE_OBJCOPY "D:/Applications/development/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-objcopy.exe")
-SET(CMAKE_SIZE "D:/Applications/development/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-size.exe")
+SET(CMAKE_OBJCOPY "C:/ENV/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-objcopy.exe")
+SET(CMAKE_SIZE "C:/ENV/env-windows/tools/bin/../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-size.exe")
 
 SET(CMAKE_EXE_LINKER_FLAGS " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T ${CMAKE_SOURCE_DIR}/board/linker_scripts/link.lds -Wl,--gc-sections,--print-memory-usage")
 
@@ -60,24 +60,12 @@ INCLUDE_DIRECTORIES(
 	src/algorithm/ramp
 	src/algorithm/arm_math
 	src/modules
-	src/modules/motor
-	src/modules/motor/DJI_motor
+	src/modules/imu
+	src/modules/imu/ADIS16467
 	src/modules/dwt
 	src/modules/msg
-	src/modules/mag
-	src/modules/mag/ist8310
-	src/modules/rc/dbus
-	src/modules/rc/keyboard
-	src/modules/referee
-	src/modules/referee/bsp_referee_UI
 	src/task
-	src/task/example
-	src/task/motor
-	src/task/cmd
-	src/task/chassis
-	src/task/gimbal
-	src/task/transmission
-	src/task/shoot
+	src/task/ins
 	rt-thread/components/drivers/smp
 	src
 )
@@ -135,10 +123,7 @@ SET(RT_DRIVERS_SOURCES
 	board/CubeMX_Config/Src/stm32f4xx_hal_msp.c
 	board/board.c
 	libraries/HAL_Drivers/drivers/drv_gpio.c
-	libraries/HAL_Drivers/drivers/drv_pulse_encoder.c
-	libraries/HAL_Drivers/drivers/drv_pwm.c
 	libraries/HAL_Drivers/drivers/drv_spi.c
-	libraries/HAL_Drivers/drivers/drv_tim.c
 	libraries/HAL_Drivers/drivers/drv_usart.c
 	libraries/HAL_Drivers/drv_common.c
 	libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f407xx.s
@@ -146,8 +131,8 @@ SET(RT_DRIVERS_SOURCES
 
 SET(RT_FINSH_SOURCES
 	rt-thread/components/finsh/msh_parse.c
-	rt-thread/components/finsh/cmd.c
 	rt-thread/components/finsh/msh.c
+	rt-thread/components/finsh/cmd.c
 	rt-thread/components/finsh/shell.c
 )
 
@@ -181,68 +166,54 @@ SET(RT_LIBCPU_SOURCES
 )
 
 SET(RT_LIBRARIES_SOURCES
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+	libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-	libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
 )
 
 SET(RT_POSIX_SOURCES
 )
 
 SET(RT_RM_ALGORITHMS_SOURCES
-	src/algorithm/QuaternionEKF/QuaternionEKF.c
+	src/algorithm/kalman_filter/kalman_filter.c
 	src/algorithm/ramp/ramp.c
+	src/algorithm/QuaternionEKF/QuaternionEKF.c
+	src/algorithm/filter/filter32.c
 	src/algorithm/user_lib/user_lib.c
 	src/algorithm/pid/pid.c
-	src/algorithm/filter/filter32.c
-	src/algorithm/kalman_filter/kalman_filter.c
 )
 
 SET(RT_RM_MODULES_SOURCES
-	src/modules/motor/DJI_motor/dji_motor.c
-	src/modules/referee/bsp_referee_UI/UI_print.c
-	src/modules/referee/bsp_referee_UI/fifo.c
-	src/modules/rc/keyboard/keyboard.c
-	src/modules/rc/dbus/rc_dbus.c
 	src/modules/dwt/drv_dwt.c
-	src/modules/usr_callback.c
-	src/modules/referee/Referee.c
 	src/modules/msg/drv_msg.c
-	src/modules/referee/bsp_referee_UI/BSP_CRC.c
-	src/modules/referee/bsp_referee_UI/Referee_system.c
-	src/modules/mag/ist8310/ist8310.c
+	src/modules/imu/ADIS16467/adis16467.c
+	src/modules/usr_callback.c
 )
 
 SET(RT_RM_TASK_SOURCES
-	src/task/gimbal/gimbal_task.c
+	src/task/ins/ins_task.c
 	src/task/robot.c
-	src/task/chassis/chassis_task.c
-	src/task/shoot/shoot_task.c
-	src/task/motor/motor_task.c
-	src/task/transmission/transmission_task.c
-	src/task/example/example_task.c
-	src/task/cmd/cmd_task.c
 )
 
 SET(RT_SMP_SOURCES
@@ -253,7 +224,7 @@ SET(RT_SRC_SOURCES
 
 # Library search paths
 SET(RT_RM_ALGORITHMS_LINK_DIRS
-	D:/Development/Code/Embeded/GCS_old/project1/src/algorithm/arm_math
+	D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/arm_math
 )
 
 # Library local macro definitions
