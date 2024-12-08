@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/applications/main.c" "CMakeFiles/rtthread.elf.dir/applications/main.c.obj" "gcc" "CMakeFiles/rtthread.elf.dir/applications/main.c.obj.d"
+  "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/transmission/transmission.c" "CMakeFiles/rtthread.elf.dir/src/task/transmission/transmission.c.obj" "gcc" "CMakeFiles/rtthread.elf.dir/src/task/transmission/transmission.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -68,24 +68,10 @@ include CMakeFiles/rtt_RM_Modules.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/rtt_RM_Modules.dir/flags.make
 
-CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj: CMakeFiles/rtt_RM_Modules.dir/flags.make
-CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt/drv_dwt.c
-CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj: CMakeFiles/rtt_RM_Modules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj"
-	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj -MF CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.obj.d -o CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.obj -c D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\dwt\drv_dwt.c
-
-CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.i"
-	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\dwt\drv_dwt.c > CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.i
-
-CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.s"
-	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\dwt\drv_dwt.c -o CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.s
-
 CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj: CMakeFiles/rtt_RM_Modules.dir/flags.make
 CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg/drv_msg.c
 CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj: CMakeFiles/rtt_RM_Modules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj"
 	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj -MF CMakeFiles\rtt_RM_Modules.dir\src\modules\msg\drv_msg.c.obj.d -o CMakeFiles\rtt_RM_Modules.dir\src\modules\msg\drv_msg.c.obj -c D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\msg\drv_msg.c
 
 CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.i: cmake_force
@@ -96,24 +82,10 @@ CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.s"
 	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\msg\drv_msg.c -o CMakeFiles\rtt_RM_Modules.dir\src\modules\msg\drv_msg.c.s
 
-CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj: CMakeFiles/rtt_RM_Modules.dir/flags.make
-CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467/adis16467.c
-CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj: CMakeFiles/rtt_RM_Modules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj"
-	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj -MF CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.obj.d -o CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.obj -c D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\imu\ADIS16467\adis16467.c
-
-CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.i"
-	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\imu\ADIS16467\adis16467.c > CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.i
-
-CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.s"
-	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\imu\ADIS16467\adis16467.c -o CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.s
-
 CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj: CMakeFiles/rtt_RM_Modules.dir/flags.make
 CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/usr_callback.c
 CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj: CMakeFiles/rtt_RM_Modules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj"
 	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj -MF CMakeFiles\rtt_RM_Modules.dir\src\modules\usr_callback.c.obj.d -o CMakeFiles\rtt_RM_Modules.dir\src\modules\usr_callback.c.obj -c D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\usr_callback.c
 
 CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.i: cmake_force
@@ -124,10 +96,53 @@ CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.s"
 	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\usr_callback.c -o CMakeFiles\rtt_RM_Modules.dir\src\modules\usr_callback.c.s
 
-rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj
+CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj: CMakeFiles/rtt_RM_Modules.dir/flags.make
+CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt/drv_dwt.c
+CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj: CMakeFiles/rtt_RM_Modules.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj -MF CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.obj.d -o CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.obj -c D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\dwt\drv_dwt.c
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.i"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\dwt\drv_dwt.c > CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.i
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.s"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\dwt\drv_dwt.c -o CMakeFiles\rtt_RM_Modules.dir\src\modules\dwt\drv_dwt.c.s
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj: CMakeFiles/rtt_RM_Modules.dir/flags.make
+CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467/adis16467.c
+CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj: CMakeFiles/rtt_RM_Modules.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj -MF CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.obj.d -o CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.obj -c D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\imu\ADIS16467\adis16467.c
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.i"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\imu\ADIS16467\adis16467.c > CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.i
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.s"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\imu\ADIS16467\adis16467.c -o CMakeFiles\rtt_RM_Modules.dir\src\modules\imu\ADIS16467\adis16467.c.s
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj: CMakeFiles/rtt_RM_Modules.dir/flags.make
+CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj: D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART/uart.c
+CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj: CMakeFiles/rtt_RM_Modules.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj -MF CMakeFiles\rtt_RM_Modules.dir\src\modules\UART\uart.c.obj.d -o CMakeFiles\rtt_RM_Modules.dir\src\modules\UART\uart.c.obj -c D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\UART\uart.c
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.i"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\UART\uart.c > CMakeFiles\rtt_RM_Modules.dir\src\modules\UART\uart.c.i
+
+CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.s"
+	C:\ENV\env-windows\tools\bin\..\..\tools\gnu_gcc\arm_gcc\mingw\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\HNU_RM_CodeStorage\User_Define_Try4\GCS_Car\src\modules\UART\uart.c -o CMakeFiles\rtt_RM_Modules.dir\src\modules\UART\uart.c.s
+
 rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/src/modules/msg/drv_msg.c.obj
-rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj
 rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/src/modules/usr_callback.c.obj
+rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj
+rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj
+rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj
 rtt_RM_Modules: CMakeFiles/rtt_RM_Modules.dir/build.make
 .PHONY : rtt_RM_Modules
 

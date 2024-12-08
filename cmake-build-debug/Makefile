@@ -2458,6 +2458,30 @@ src/algorithm/user_lib/user_lib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtt_RM_Algorithms.dir\build.make CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/user_lib/user_lib.c.s
 .PHONY : src/algorithm/user_lib/user_lib.c.s
 
+src/modules/UART/uart.obj: src/modules/UART/uart.c.obj
+.PHONY : src/modules/UART/uart.obj
+
+# target to build an object file
+src/modules/UART/uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtt_RM_Modules.dir\build.make CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj
+.PHONY : src/modules/UART/uart.c.obj
+
+src/modules/UART/uart.i: src/modules/UART/uart.c.i
+.PHONY : src/modules/UART/uart.i
+
+# target to preprocess a source file
+src/modules/UART/uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtt_RM_Modules.dir\build.make CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.i
+.PHONY : src/modules/UART/uart.c.i
+
+src/modules/UART/uart.s: src/modules/UART/uart.c.s
+.PHONY : src/modules/UART/uart.s
+
+# target to generate assembly for a file
+src/modules/UART/uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtt_RM_Modules.dir\build.make CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.s
+.PHONY : src/modules/UART/uart.c.s
+
 src/modules/dwt/drv_dwt.obj: src/modules/dwt/drv_dwt.c.obj
 .PHONY : src/modules/dwt/drv_dwt.obj
 
@@ -2601,6 +2625,30 @@ src/task/robot.s: src/task/robot.c.s
 src/task/robot.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtt_RM_Task.dir\build.make CMakeFiles/rtt_RM_Task.dir/src/task/robot.c.s
 .PHONY : src/task/robot.c.s
+
+src/task/transmission/transmission.obj: src/task/transmission/transmission.c.obj
+.PHONY : src/task/transmission/transmission.obj
+
+# target to build an object file
+src/task/transmission/transmission.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtthread.elf.dir\build.make CMakeFiles/rtthread.elf.dir/src/task/transmission/transmission.c.obj
+.PHONY : src/task/transmission/transmission.c.obj
+
+src/task/transmission/transmission.i: src/task/transmission/transmission.c.i
+.PHONY : src/task/transmission/transmission.i
+
+# target to preprocess a source file
+src/task/transmission/transmission.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtthread.elf.dir\build.make CMakeFiles/rtthread.elf.dir/src/task/transmission/transmission.c.i
+.PHONY : src/task/transmission/transmission.c.i
+
+src/task/transmission/transmission.s: src/task/transmission/transmission.c.s
+.PHONY : src/task/transmission/transmission.s
+
+# target to generate assembly for a file
+src/task/transmission/transmission.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rtthread.elf.dir\build.make CMakeFiles/rtthread.elf.dir/src/task/transmission/transmission.c.s
+.PHONY : src/task/transmission/transmission.c.s
 
 # Help Target
 help:
@@ -2896,6 +2944,9 @@ help:
 	@echo ... src/algorithm/user_lib/user_lib.obj
 	@echo ... src/algorithm/user_lib/user_lib.i
 	@echo ... src/algorithm/user_lib/user_lib.s
+	@echo ... src/modules/UART/uart.obj
+	@echo ... src/modules/UART/uart.i
+	@echo ... src/modules/UART/uart.s
 	@echo ... src/modules/dwt/drv_dwt.obj
 	@echo ... src/modules/dwt/drv_dwt.i
 	@echo ... src/modules/dwt/drv_dwt.s
@@ -2914,6 +2965,9 @@ help:
 	@echo ... src/task/robot.obj
 	@echo ... src/task/robot.i
 	@echo ... src/task/robot.s
+	@echo ... src/task/transmission/transmission.obj
+	@echo ... src/task/transmission/transmission.i
+	@echo ... src/task/transmission/transmission.s
 .PHONY : help
 
 

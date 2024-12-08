@@ -1349,10 +1349,9 @@ const static struct rt_device_ops serial_ops =
 /*
  * serial register
  */
-rt_err_t rt_hw_serial_register(struct rt_serial_device *serial,
-                               const char              *name,
-                               rt_uint32_t              flag,
-                               void                    *data)
+rt_err_t
+rt_hw_serial_register(struct rt_serial_device *serial, const char *name, rt_uint32_t flag, void *data, int i, int i1,
+                      int i2)
 {
     rt_err_t ret;
     struct rt_device *device;

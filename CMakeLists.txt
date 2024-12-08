@@ -64,6 +64,7 @@ INCLUDE_DIRECTORIES(
 	src/modules/imu/ADIS16467
 	src/modules/dwt
 	src/modules/msg
+	src/modules/UART
 	src/task
 	src/task/ins
 	rt-thread/components/drivers/smp
@@ -83,6 +84,8 @@ ADD_DEFINITIONS(
 # Library source files
 SET(RT_APPLICATIONS_SOURCES
 	applications/main.c
+        src/task/transmission/transmission.c
+        src/task/transmission/transmission.h
 )
 
 SET(RT_COMPILER_SOURCES
@@ -130,10 +133,10 @@ SET(RT_DRIVERS_SOURCES
 )
 
 SET(RT_FINSH_SOURCES
-	rt-thread/components/finsh/msh_parse.c
-	rt-thread/components/finsh/msh.c
-	rt-thread/components/finsh/cmd.c
 	rt-thread/components/finsh/shell.c
+	rt-thread/components/finsh/msh_parse.c
+	rt-thread/components/finsh/cmd.c
+	rt-thread/components/finsh/msh.c
 )
 
 SET(RT_KERNEL_SOURCES
@@ -166,49 +169,50 @@ SET(RT_LIBCPU_SOURCES
 )
 
 SET(RT_LIBRARIES_SOURCES
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
-	libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
-	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+	libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
+	libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 )
 
 SET(RT_POSIX_SOURCES
 )
 
 SET(RT_RM_ALGORITHMS_SOURCES
-	src/algorithm/kalman_filter/kalman_filter.c
-	src/algorithm/ramp/ramp.c
-	src/algorithm/QuaternionEKF/QuaternionEKF.c
-	src/algorithm/filter/filter32.c
-	src/algorithm/user_lib/user_lib.c
 	src/algorithm/pid/pid.c
+	src/algorithm/user_lib/user_lib.c
+	src/algorithm/QuaternionEKF/QuaternionEKF.c
+	src/algorithm/ramp/ramp.c
+	src/algorithm/filter/filter32.c
+	src/algorithm/kalman_filter/kalman_filter.c
 )
 
 SET(RT_RM_MODULES_SOURCES
-	src/modules/dwt/drv_dwt.c
 	src/modules/msg/drv_msg.c
-	src/modules/imu/ADIS16467/adis16467.c
 	src/modules/usr_callback.c
+	src/modules/dwt/drv_dwt.c
+	src/modules/imu/ADIS16467/adis16467.c
+	src/modules/UART/uart.c
 )
 
 SET(RT_RM_TASK_SOURCES

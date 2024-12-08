@@ -214,7 +214,7 @@ struct serial_configure
     rt_uint32_t data_bits               :4;
     rt_uint32_t stop_bits               :2;
     rt_uint32_t parity                  :2;
-    rt_uint32_t bit_order               :1;
+    rt_uint32_t bit_order               :1; /* 高位在前或者低位在前 */
     rt_uint32_t invert                  :1;
     rt_uint32_t bufsz                   :16;
     rt_uint32_t flowcontrol             :1;
@@ -303,10 +303,9 @@ void rt_hw_serial_isr(struct rt_serial_device *serial, int event);
  *       and add a device object to system object list.
  * @ingroup  Serial
  */
-rt_err_t rt_hw_serial_register(struct rt_serial_device *serial,
-                               const char              *name,
-                               rt_uint32_t              flag,
-                               void                    *data);
+rt_err_t
+rt_hw_serial_register(struct rt_serial_device *serial, const char *name, rt_uint32_t flag, void *data, int i, int i1,
+                      int i2);
 
 /**
  * @brief     register a serial device to system device list and add a device object to system object list

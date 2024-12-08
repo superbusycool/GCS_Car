@@ -24,6 +24,8 @@
 #ifdef BSP_USING_IMU
 #include "imu.h"
 #endif /* BSP_USING_IMU */
-
+#ifdef BSP_USING_USART
+#include "uart.h"
+#endif
 
 #endif /* _RM_MODULE_H */

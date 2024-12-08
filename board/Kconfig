@@ -423,6 +423,10 @@ menu "RoboMaster Modules"
         bool "Enable Pub Sub Message"
         default y
 
+    config BSP_USING_USART
+         bool "Enable uart"
+         default y
+
 
     menuconfig BSP_USING_IMU
         bool "Enable IMU"
@@ -469,6 +473,10 @@ endmenu
 menu "RoboMaster Tasks"
 
     config BSP_USING_INS_TASK
+        bool "Select USING Ins Task"
+        default y
+
+    config BSP_USING_TRANSMMISION_TASK
         bool "Select USING Ins Task"
         default y
 

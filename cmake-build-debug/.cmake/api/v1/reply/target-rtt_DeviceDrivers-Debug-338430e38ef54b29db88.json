@@ -87,19 +87,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 251,
+				"line" : 255,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 73,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 267,
+				"line" : 271,
 				"parent" : 0
 			},
 			{
@@ -303,6 +303,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"
 				},
 				{
 					"backtrace" : 4,

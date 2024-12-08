@@ -27,57 +27,7 @@ extern "C" {
 #include "adis16467.h"
 #endif /* BSP_USING_ADIS16467 */
 
-/* ---------------------------------- GYRO ---------------------------------- */
-/* gyro range type */
-#define GYRO_RANGE_250DPS  250
-#define GYRO_RANGE_500DPS  500
-#define GYRO_RANGE_1000DPS 1000
-#define GYRO_RANGE_2000DPS 2000
 
-/* gyro device bus type */
-#define GYRO_SPI_BUS_TYPE 1
-#define GYRO_I2C_BUS_TYPE 2
-
-/* default config for accel sensor */
-#define GYRO_CONFIG_DEFAULT                              \
-    {                                                    \
-        2000,                   /* 2K sample rate */     \
-            230,                /* 230Hz internal lpf */ \
-            GYRO_RANGE_2000DPS, /* +-2000 deg/s */       \
-    }
-
-struct gyro_configure {
-    rt_uint32_t sample_rate_hz;
-    rt_uint16_t dlpf_freq_hz;
-    rt_uint32_t gyro_range_dps;
-};
-/* ---------------------------------- GYRO ---------------------------------- */
-
-/* ---------------------------------- ACCLE --------------------------------- */
-/* accel range type */
-#define ACCEL_RANGE_2G  2
-#define ACCEL_RANGE_4G  4
-#define ACCEL_RANGE_8G  8
-#define ACCEL_RANGE_16G 16
-
-/* accel device bus type */
-#define ACCEL_SPI_BUS_TYPE 1
-#define ACCEL_I2C_BUS_TYPE 2
-
-/* default config for accel sensor */
-#define ACCEL_CONFIG_DEFAULT                                    \
-    {                                                           \
-        800,                 /* 800 sample rate */              \
-            280,             /* Normal BW */                    \
-            ACCEL_RANGE_6G,  /* +-6g */                         \
-    }
-
-struct accel_configure {
-    rt_uint32_t sample_rate_hz; /* sample rate in Hz */
-    rt_uint16_t dlpf_freq_hz;   /* internal low-pass filter cur-off freq in Hz */
-    rt_uint32_t acc_range_g;    /* accel measure range in g */
-};
-/* ---------------------------------- ACCLE --------------------------------- */
 
 struct imu_ops{
     rt_err_t (*imu_init)(void);

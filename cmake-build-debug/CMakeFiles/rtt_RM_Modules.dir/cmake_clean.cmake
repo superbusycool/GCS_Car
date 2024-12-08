@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj"
+  "CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj.d"
   "CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj"
   "CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj.d"
   "CMakeFiles/rtt_RM_Modules.dir/src/modules/imu/ADIS16467/adis16467.c.obj"

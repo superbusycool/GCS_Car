@@ -97,8 +97,8 @@
 //    uint8_t clearbits;
 //} reg_val_t;
 
-#define gyro_scale_factor  40*65536   //对应 1度/s
-#define accel_scale_factor  1.25 / (65536 * 1000)    //1->1.25/2^16mg
+#define gyro_scale_factor  65536 / 40  //对应 1度/s
+#define accel_scale_factor  1.25 / 65536    //1->1.25/2^16mg
 #define temp_scale_factor0   10.0f     //0.1摄氏度->1
 #define temp_scale_factor1   0.01220703     // 400/2^16,查阅手册可知
 
@@ -193,30 +193,34 @@ static rt_err_t gyro_read_rad(float gyr[3])
 
     gyro_read_raw(gyr_raw);
 
+    gyr[0] = gyr_raw[0] / gyro_scale_factor ;
+    gyr[1] = gyr_raw[1] / gyro_scale_factor ;
+    gyr[2] = gyr_raw[2] / gyro_scale_factor ;
 
-    gyr[0] = gyr_raw[0] / gyro_scale_factor;
-    gyr[1] = gyr_raw[1] / gyro_scale_factor;
-    gyr[2] = gyr_raw[2] / gyro_scale_factor;
+//    gyr[0] = ( gyr_raw[0] / gyro_scale_factor )*10000 / 10000;
+//    gyr[1] = ( gyr_raw[1] / gyro_scale_factor )*10000 / 10000;
+//    gyr[2] = ( gyr_raw[2] / gyro_scale_factor )*10000 / 10000;
 
 
     return RT_EOK;
 }
 
-
+uint16_t a;
 
 static rt_err_t ADIS16467_Register_SET(void)
 {
     uint8_t ADIS16467_id[2];
     uint16_t ADIS16467_ID0 ;
-    /* init spi bus */
-    rt_device_open(ADIS16467_spi_dev, RT_DEVICE_OFLAG_RDWR);
+    rt_hw_us_delay(20);
+
     /* read ADIS16467 id */
     spi_read_multi_reg8(ADIS16467_spi_dev, PROD_ID, (uint8_t *)ADIS16467_id,2);
     ADIS16467_ID0 = (ADIS16467_id[1] << 8 )| ADIS16467_id[0];
-//    if (ADIS16467_ID0 != ADIS16467_ID1) {      //确认设备
-//        LOG_W("Warning: not found ADIS16467 accel id: %02x", ADIS16467_id);
-//        return RT_ERROR;
-//    }
+    a=SPI_ADIS16467_CS;
+    if (ADIS16467_ID0 != ADIS16467_ID1) {      //确认设备
+        LOG_W("Warning: not found ADIS16467 accel id: %02x", ADIS16467_id);
+        return RT_ERROR;
+    }
 
 
     spi_write_reg8(ADIS16467_spi_dev, GLOB_CMD, 0x80);     /* 软件重置重置设备*/
@@ -231,9 +235,9 @@ static rt_err_t ADIS16467_Register_SET(void)
     spi_write_reg8(ADIS16467_spi_dev, (DEC_RATE+0x01), 0x00);
     rt_hw_us_delay(200);
 
-    spi_write_reg8(ADIS16467_spi_dev, NULL_CNFG, 0x0A);     /* 启动个轴accel和gyro的bias计算 */
-    spi_write_reg8(ADIS16467_spi_dev, (NULL_CNFG+0x01), 0x3F);
-    rt_hw_us_delay(200);
+//    spi_write_reg8(ADIS16467_spi_dev, NULL_CNFG, 0x0A);     /* 启动个轴accel和gyro的bias计算 */
+//    spi_write_reg8(ADIS16467_spi_dev, (NULL_CNFG+0x01), 0x3F);
+//    rt_hw_us_delay(200);
 
     spi_write_reg8(ADIS16467_spi_dev, USER_SCR_1, 0x05);     /* for user to store information */
     spi_write_reg8(ADIS16467_spi_dev, (USER_SCR_1+0x01), 0x00);
@@ -494,7 +498,7 @@ static rt_err_t ADIS16467_init(void)
     /* config spi 配置spi参数*/
     {
         struct rt_spi_configuration cfg;
-        cfg.data_width = 8;
+        cfg.data_width = 16;
         cfg.mode = RT_SPI_MODE_3 | RT_SPI_MSB; /* SPI Compatible Modes 3 */
         cfg.max_hz = 1000000;
 
@@ -504,6 +508,7 @@ static rt_err_t ADIS16467_init(void)
         spi_device_t->config.max_hz = cfg.max_hz;
 
         rt_spi_configure(spi_device_t, &cfg);
+        rt_device_open(ADIS16467_spi_dev, RT_DEVICE_OFLAG_RDWR);
     }
 
     ADIS16467_Register_SET();

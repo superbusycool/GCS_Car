@@ -68,6 +68,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -137,6 +138,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -207,6 +209,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -277,6 +280,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -346,6 +350,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -415,6 +420,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -484,6 +490,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -553,6 +560,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -623,6 +631,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -693,6 +702,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -762,6 +772,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -831,6 +842,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -900,6 +912,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -969,6 +982,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1038,6 +1052,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1107,6 +1122,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1176,6 +1192,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1245,6 +1262,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1314,6 +1332,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1383,6 +1402,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1452,6 +1472,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1521,6 +1542,7 @@
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"/>
+					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"/>
 					<Add directory="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"/>
@@ -1831,6 +1853,9 @@
 			<Option target="rtthread.elf"/>
 		</Unit>
 		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Algorithms.dir/src/algorithm/user_lib/user_lib.c.obj">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/UART/uart.c.obj">
 			<Option target="rtthread.elf"/>
 		</Unit>
 		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/cmake-build-debug/CMakeFiles/rtt_RM_Modules.dir/src/modules/dwt/drv_dwt.c.obj">
@@ -2181,6 +2206,12 @@
 		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/algorithm/user_lib/user_lib.h">
 			<Option target="rtt_RM_Algorithms"/>
 		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART/uart.c">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART/uart.h">
+			<Option target="rtt_RM_Modules"/>
+		</Unit>
 		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt/drv_dwt.c">
 			<Option target="rtt_RM_Modules"/>
 		</Unit>
@@ -2213,6 +2244,12 @@
 		</Unit>
 		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/robot.c">
 			<Option target="rtt_RM_Task"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/transmission/transmission.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/transmission/transmission.h">
+			<Option target="rtthread.elf"/>
 		</Unit>
 		<Unit filename="D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

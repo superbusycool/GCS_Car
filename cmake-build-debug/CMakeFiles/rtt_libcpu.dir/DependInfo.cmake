@@ -62,6 +62,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/imu/ADIS16467"
   "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/dwt"
   "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg"
+  "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART"
   "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task"
   "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins"
   "D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/smp"

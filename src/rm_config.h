@@ -17,15 +17,15 @@
 
 /* ADIS16467所挂载的 SPI 设备名称及 CS 引脚 */
 #define SPI_ADIS16467        "spi1"
-#define SPI_ADIS16467_CS     rt_pin_get("PA.4")  // Nss/cs   PA4
+#define SPI_ADIS16467_CS     rt_pin_get("PA.2")  // Nss/cs   PA2
 
 
 /* 弹仓盖舵机所挂载的 PWM 设备及通道号 */
 #define PWM_COVER        "pwm1"
 #define PWM_COVER_CH     2
 
-/* 遥控器所挂载的 usart 设备名称 */
-#define USART_RC       "uart1"
+/* 无线串口模块所挂载的 usart 设备名称 */
+#define Usart_Name       "uart1"
 
 
 

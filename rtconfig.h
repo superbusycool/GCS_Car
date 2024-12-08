@@ -346,6 +346,7 @@
 
 #define BSP_USING_DWT
 #define BSP_USING_PS_MSG
+#define BSP_USING_USART
 #define BSP_USING_IMU
 #define BSP_USING_ADIS16467
 /* end of RoboMaster Modules */

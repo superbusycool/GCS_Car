@@ -100,6 +100,7 @@ CMakeFiles/rtt_RM_Task.dir/src/task/ins/ins_task.c.obj: D:/HNU_RM_CodeStorage/Us
   D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include/drivers/hwtimer.h \
   D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include/drivers/dev_pwm.h \
   D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include/drivers/pulse_encoder.h \
+  D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART/uart.h \
   D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/rm_task.h \
   D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/ins/ins_task.h \
   D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/msg/drv_msg.h \
@@ -361,6 +362,8 @@ D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/incl
 D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include/drivers/dev_pwm.h:
 
 D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/rt-thread/components/drivers/include/drivers/pulse_encoder.h:
+
+D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/modules/UART/uart.h:
 
 D:/HNU_RM_CodeStorage/User_Define_Try4/GCS_Car/src/task/rm_task.h:
 
